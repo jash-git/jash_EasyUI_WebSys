@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: localhost
--- 產生日期: 2021 年 12 月 31 日 02:11
+-- 產生日期: 2021 年 12 月 31 日 02:53
 -- 伺服器版本: 5.6.13
 -- PHP 版本: 5.4.17
 
@@ -69,7 +69,7 @@ INSERT INTO `easyui_nav` (`id`, `text`, `state`, `iconCls`, `url`, `nid`) VALUES
 (1, '系統模塊', 'closed', 'icon-system', '', 0),
 (2, '管理員管理', 'open', 'icon-manager', 'manager', 1),
 (3, '數據統計模塊', 'closed', 'icon-shapes', '', 0),
-(4, '基本統計圖', 'open', 'icon-chart', 'user', 3);
+(4, '基本統計圖', 'open', 'icon-chart', 'chart', 3);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
