@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主機: localhost
--- 產生日期: 2021 年 12 月 30 日 07:13
+-- 產生日期: 2021 年 12 月 31 日 02:11
 -- 伺服器版本: 5.6.13
 -- PHP 版本: 5.4.17
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `easyui_admin` (
 
 INSERT INTO `easyui_admin` (`id`, `manager`, `password`, `auth`, `date`) VALUES
 (1, 'admin', '7c4a8d09ca3762af61e59520943dc26494f8941b', '管理員管理,會員管理', 1406080825),
-(4, 'jash.liao', 'a12a276f54d1af112dbd2d48dcf5d6583a23a267', '管理員管理,會員管理', 1640847929);
+(4, 'jash.liao', 'fecdda7743d6828422556e3b3ec271c1ecd711a5', '管理員管理', 1640847929);
 
 -- --------------------------------------------------------
 
@@ -68,8 +68,8 @@ CREATE TABLE IF NOT EXISTS `easyui_nav` (
 INSERT INTO `easyui_nav` (`id`, `text`, `state`, `iconCls`, `url`, `nid`) VALUES
 (1, '系統模塊', 'closed', 'icon-system', '', 0),
 (2, '管理員管理', 'open', 'icon-manager', 'manager', 1),
-(3, '會員模塊', 'closed', 'icon-user', '', 0),
-(4, '會員管理', 'open', 'icon-group', 'user', 3);
+(3, '數據統計模塊', 'closed', 'icon-shapes', '', 0),
+(4, '基本統計圖', 'open', 'icon-chart', 'user', 3);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
