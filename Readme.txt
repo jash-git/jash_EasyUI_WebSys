@@ -10,3 +10,4 @@ jash_EasyUI_WebSys [使用李炎恢最後範例修改成繁中]
 20211231-修改easyui.sql
 20211231-新增echarts函示庫支援
 20211231-新增chart.php
+20211231-修改chart.php，實作動態假更新 [目前有個BUG 開了之後就不能關閉，否則無法再開]
