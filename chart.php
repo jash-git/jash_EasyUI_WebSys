@@ -19,13 +19,16 @@
 	</font>
 </div>
 
+
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
 <div id="main" style="width: 1024px;height:768px;"></div>
-
+<br/>
+<button onclick="StopFunction()">Stop it</button>
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
 	var myChart = echarts.init(document.getElementById('main'));
 	var gCount=0;
+	var t;
 	
 	function showtime()
 	{
@@ -112,9 +115,19 @@
 		{
 			gCount=0;
 		}
-		setTimeout("showAuto()", 100);
+
+		
 	}
 	
-	showAuto();
+	function StopFunction()
+	{
+		clearTimeout(t);
+	}
+	
+	$(function(){
+	　　t = setInterval("showAuto()", 100); 
+	})
+	
+
 
 </script>
