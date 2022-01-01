@@ -14,3 +14,5 @@ jash_EasyUI_WebSys [使用李炎恢最後範例修改成繁中]
 
 20220101-修改chart.php，使用暴力方法修正BUG [並錄影操作結果& 備份完整程式碼在錄影目錄中]
 20220101-修改chart.php，顯示數值獨立到JS的變數中
+20220101-修改chart.php，顯示數值透過AJAX呼叫PHP產生
+20220101-新增getChart.php

@@ -52,16 +52,49 @@
 	{
 		var option;
 		
-		var SwitchData;
-		var data01 = [5, 20, 36, 10, 10, 20];
-		var data02 = [20, 10, 10, 36, 20, 5];
+		var SwitchData = [];
+		//alert(SwitchData);
+		//var data01 = [5, 20, 36, 10, 10, 20];
+		//var data02 = [20, 10, 10, 36, 20, 5];
 		if((value%2)==1)
 		{
-			SwitchData=data01;
+			//*
+			$.ajax(
+			{
+					 url: 'getChart.php?v=1',
+					 cache: false,
+					 type:'Get',
+					 async:false, //設定為同步(=必須等待執行結果)
+					 error:function(){
+						 //alert('Ajax request 發生錯誤');
+						 },
+					 success: function(res){
+							//alert(res);
+							SwitchData.length = 0;
+							SwitchData=$.parseJSON(res);
+						 }
+			});
+			//*/
 		}
 		else
 		{
-			SwitchData=data02;
+			//*
+			$.ajax(
+			{
+					 url: 'getChart.php?v=0',
+					 cache: false,
+					 type:'Get',
+					 async:false, //設定為同步(=必須等待執行結果)
+					 error:function(){
+						 //alert('Ajax request 發生錯誤');
+						 },
+					 success: function(res){
+						    //alert(res);
+							SwitchData.length = 0;
+							SwitchData=$.parseJSON(res);
+						}
+			});	
+			//*/
 		}
 		
 		// 指定图表的配置项和数据
