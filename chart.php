@@ -19,11 +19,12 @@
 	</font>
 </div>
 
+<!-- <button onclick="StopFunction()">Stop it</button> -->
+<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-reload'" style="width:80px" onclick="StopFunction()">Stop it</a>
 
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-<div id="main" style="width: 1024px;height:768px;"></div>
-<br/>
-<button onclick="StopFunction()">Stop it</button>
+<div id="main" style="width: 960px;height:720px;"></div>
+
 <script type="text/javascript">
 	// 基于准备好的dom，初始化echarts实例
 	var myChart = echarts.init(document.getElementById('main'));
@@ -39,7 +40,7 @@
 		seconds = now.getSeconds();
 		timeValue = now.getFullYear()+"年";
 		timeValue += (((now.getMonth()+1) < 10) ? " 0" : " ")+(now.getMonth()+1)+"月";
-		timeValue += ((now.getDate()< 10) ? " 0" : " ")+now.getDate()+"日<br>";
+		timeValue += ((now.getDate()< 10) ? " 0" : " ")+now.getDate()+"日&emsp;";
 		timeValue += (hours >= 12) ? "下午 " : "上午 "; 
 		timeValue += ((hours > 12) ? hours - 12 : hours) + " 點"; 
 		timeValue += ((minutes < 10) ? " 0" : " ") + minutes + " 分"; 
@@ -122,6 +123,7 @@
 	function StopFunction()
 	{
 		clearTimeout(t);
+		history.go(0);
 	}
 	
 	$(function(){
